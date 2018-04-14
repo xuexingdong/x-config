@@ -1,13 +1,26 @@
 spring:
   datasource:
-    driverClassName: org.postgresql.ds.PGSimpleDataSource
-  redis:
-    host: r-bp13f476c41eab44.redis.rds.aliyuncs.com
+    driver-class-name: org.postgresql.ds.PGSimpleDataSource
+    url: jdbc:mysql://127.0.0.1:3306/x?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      virtual-host: x
+  lettuce:
+    host: localhost
     port: 6379
-    password: h42OxFSEeI
-    pool:
-      max-active: 200
-      max-wait: 300
-      max-idle: 50
-      min-idle: 10
-      timeout: 0
+    jedis:
+      pool:
+        max-active: 200
+        max-idle: 50
+        min-idle: 10
+        max-wait: 300ms
+    timeout: 0ms
+
+token:
+  secret-key: xxd
+  expire-time: 0
