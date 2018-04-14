@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.ds.PGSimpleDataSource
+  redis:
+    host: r-bp13f476c41eab44.redis.rds.aliyuncs.com
+    port: 6379
+    password: h42OxFSEeI
+    pool:
+      max-active: 200
+      max-wait: 300
+      max-idle: 50
+      min-idle: 10
+      timeout: 0
