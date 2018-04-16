@@ -1,3 +1,3 @@
-token:
+jwt:
   secret-key: xuexingdong
   expire-time: 0
