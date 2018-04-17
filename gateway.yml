@@ -1,4 +1,5 @@
 zuul:
   routes:
-    ucenter: /ucenter/**
-    chatbot: /chatbot/**
+    ucenter:
+      path: /ucenter/**
+      serviceId: ucenter
