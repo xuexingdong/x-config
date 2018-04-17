@@ -1,0 +1,4 @@
+zuul:
+  routes:
+    ucenter: /ucenter/**
+    chatbot: /chatbot/**
