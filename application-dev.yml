@@ -1,7 +1,6 @@
 spring:
   datasource:
-    driver: org.postgresql.ds.PGSimpleDataSource
-    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.ds.PGSimpleDataSource
     url: jdbc:postgresql://localhost:5432/x?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: postgres
     password: 123456
