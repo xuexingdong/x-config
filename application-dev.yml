@@ -1,9 +1,9 @@
 spring:
   datasource:
-    driver: com.mysql.jdbc.Driver
+    driver: org.postgresql.Driver
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/x?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
+    username: postgres
     password: 123456
   rabbitmq:
       host: localhost
