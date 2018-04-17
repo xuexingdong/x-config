@@ -1,9 +1,9 @@
 spring:
   datasource:
-    hikari:
-      data-source-class-name: org.postgresql.ds.PGSimpleDataSource
-      user: postgres
-      password: 123456
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/x
+    username: postgres
+    password: 123456
   jpa:
     properties:
         hibernate:
