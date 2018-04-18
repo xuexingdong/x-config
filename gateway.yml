@@ -3,7 +3,9 @@ spring:
     gateway:
       routes:
       - id: ucenter
-        uri: lb://ucenter:8080
+        uri: lb://ucenter
+        predicates:
+          - Path=/ucenter/**
 
 ribbon:
   eureka:
