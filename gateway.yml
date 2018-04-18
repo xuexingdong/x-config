@@ -1,6 +1,9 @@
-zuul:
-  routes:
-    ucenter: /ucenter/**
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: ucenter
+        uri: lb://ucenter:8080
 
 ribbon:
   eureka:
