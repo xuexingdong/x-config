@@ -1,5 +1,7 @@
 zuul:
   routes:
-    ucenter:
-      path: /ucenter/**
-      serviceId: ucenter
+    ucenter: /ucenter/**
+
+ribbon:
+  eureka:
+    enabled: false
