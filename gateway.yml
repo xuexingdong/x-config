@@ -6,7 +6,6 @@ spring:
         uri: lb://ucenter
         predicates:
           - Path=/ucenter/**
-
-ribbon:
-  eureka:
-    enabled: false
+      discovery:
+        locator:
+          enabled: true
