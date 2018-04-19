@@ -26,7 +26,3 @@ spring:
         min-idle: 10
         max-wait: 300ms
     timeout: 0ms
-
-token:
-  secret-key: xxd
-  expire-time: 0
