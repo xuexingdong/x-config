@@ -1,0 +1,5 @@
+mybatis:
+  type-aliases-package: com.xuexingdong.x.entity
+  mapper-locations: classpath:com.xuexingdong.x.ucenter.mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
