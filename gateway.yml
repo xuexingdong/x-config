@@ -9,3 +9,5 @@ spring:
       discovery:
         locator:
           enabled: true
+server:
+  port: 8088
