@@ -1,6 +1,6 @@
 spring:
   messages:
-    basename: messages/messages
+    basename: messages
 
 endpoints:
   restart:
