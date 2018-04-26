@@ -1,13 +1,17 @@
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+      default-filters:
+      - LoggerFilter
       routes:
       - id: ucenter
         uri: lb://ucenter
         predicates:
-          - Path=/ucenter/**
-      discovery:
-        locator:
-          enabled: true
+          - Path=/*/**
+        filter:
+          - LoginFilter
 server:
   port: 8088
