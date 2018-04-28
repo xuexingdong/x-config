@@ -5,13 +5,14 @@ spring:
         locator:
           enabled: true
       default-filters:
-      - LoggerFilter
+      - Logger
       routes:
       - id: ucenter
         uri: lb://ucenter
         predicates:
-          - Path=/*/**
-        filter:
-          - LoginFilter
+          - Path=/ucenter/**
+        filters:
+          - Auth
+
 server:
   port: 8088
