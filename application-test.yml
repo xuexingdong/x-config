@@ -4,28 +4,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/x
     username: postgres
     password: 123456
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
-    properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
-    properties:
-      hibernate:
-        temp.use_jdbc_metadata_defaults: false
   rabbitmq:
       host: localhost
       port: 5672
       username: guest
       password: guest
       virtual-host: x
-  lettuce:
-    host: localhost
-    port: 6379
-    jedis:
-      pool:
-        max-active: 200
-        max-idle: 50
-        min-idle: 10
-        max-wait: 300ms
-    timeout: 0ms
