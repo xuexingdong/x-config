@@ -11,8 +11,6 @@ spring:
         uri: lb://ucenter
         predicates:
           - Path=/ucenter/**
-        filters:
-          - Auth
 
 server:
   port: 8088
